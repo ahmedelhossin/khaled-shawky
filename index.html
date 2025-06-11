@@ -253,6 +253,34 @@
             color: var(--primary-color);
             text-decoration: underline;
         }
+        .listen-note-paragraph {
+    font-family: 'Cairo', sans-serif; /* تأكد من تطبيق خط كايرو */
+    font-size: 1.15rem; /* حجم الخط ليكون واضحًا */
+    line-height: 1.6; /* تباعد الأسطر لتحسين القراءة */
+    color: var(--text-color); /* لون النص الأساسي */
+    text-align: center; /* توسيط النص */
+    padding: 15px 20px; /* مسافة داخلية حول النص */
+    background-color: var(--light-bg); /* خلفية فاتحة */
+    border: 1px solid #ced4da; /* حدود خفيفة لتمييزها */
+    border-radius: 8px; /* زوايا مستديرة ناعمة */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08); /* ظل خفيف جدًا */
+    margin-bottom: 20px; /* مسافة أسفل الفقرة */
+}
+
+.listen-note-paragraph .fa-volume-up {
+    color: var(--primary-color); /* لون أيقونة الصوت بلونك الأساسي */
+    font-size: 1.25rem; /* حجم أيقونة أكبر قليلاً */
+}
+
+@media (max-width: 767.98px) {
+    .listen-note-paragraph {
+        font-size: 1rem; /* تصغير الخط على الشاشات الصغيرة */
+        padding: 12px 15px;
+    }
+    .listen-note-paragraph .fa-volume-up {
+        font-size: 1.1rem; /* تصغير أيقونة الصوت على الشاشات الصغيرة */
+    }
+}
     </style>
 </head>
 <body>
@@ -278,9 +306,15 @@
             </div>
         </div>
     </nav>
-
+<br><br><br>
+<div class="container mt-4 mb-4">
+    <p class="listen-note-paragraph">
+        <i class="fas fa-volume-up me-2"></i> لمن يريد الاستماع أو لإخواننا المكفوفين، يُرجى الضغط على زر "استمع" بجانب كل فقرة.
+    </p>
+</div>
     <div class="container mt-5 pt-5">
         <section id="story-section">
+            <p >لمن يريد الأستماع أو لأخواننا المكفوفين, يرجي الضغط علي زر استمع</p>
             <h2>حكاية البطل خالد: من قريته إلى قلوبنا</h2>
             <img src="photo.jpg" alt="صورة رئيسية للبطل خالد" class="img-fluid story-main-image">
             <div class="story-content">
